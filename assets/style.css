@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Crete+Round&family=Mulish:wght@400;700&display=swap");
+:root {
+  --dark-blue: rgb(17, 64, 132);
+  --blue: rgb(52, 102, 170);
+  --light-blue: rgb(130, 183, 220);
+  --white: rgb(241, 241, 241);
+  --dark-gray: rgb(128, 128, 128);
+  --gray: rgba(128, 128, 128, 0.2);
+  --black: rgba(28, 28, 28, 0.2);
+}
+
+/* Header || Navigation */
+.header-section {
+  width: 100%;
+  background-color: var(--blue);
+  padding: 1rem;
+}
+.header-section h1 {
+  color: #fff;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-section .navigation-list {
+  display: flex;
+}
+.navigation-section .navigation-list .nav-list-item {
+  margin-inline: 1rem;
+}
+.navigation-section .navigation-list .nav-list-item {
+  color: #fff;
+  font-family: "Average", Arial, Helvetica, sans-serif;
+}
+.navigation-section .navigation-list .nav-list-item:hover {
+  color: var(--light-blue);
+}
+
+/* About section */
+.about-section {
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: 5rem;
+}
+
+.about-section .text-container {
+  padding-inline: 1rem;
+}
+.about-section .text-container h2 {
+  color: var(--dark-blue);
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-size: 300%;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.about-section .text-container p {
+  line-height: 1.5rem;
+  color: var(--dark-gray);
+}
+
+/* My work section */
+.my-work-section {
+  padding-inline: 1rem;
+}
+.my-work-section h3 {
+  color: var(--dark-blue);
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-size: 225%;
+  font-weight: bold;
+  text-align: center;
+}
+.my-work-section .project-card {
+  min-height: 300px;
+  background-color: rgba(255, 0, 0, 0.363);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+}
+
+/* More work section */
+.more-work-section {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 2rem;
+}
+.more-work-section .social-icon-container {
+  background-color: orange;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+/* Contact section */
+.contact-section {
+  min-height: 400px;
+  padding: 2rem;
+}
+.contact-section h4 {
+  color: var(--dark-blue);
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact-section .form-container {
+  margin: 0 auto;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px var(--black);
+  padding: 1rem;
+}
+.contact-section .form-container input,
+textarea {
+  width: 100%;
+  margin-block: 0.5rem;
+  background-color: var(--gray);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+}
+.contact-section .form-container .form-button {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin: 2rem auto 0;
+  display: block;
+}
+
+/* Footer section */
+.footer-section {
+  width: 100%;
+  background-color: var(--blue);
+  padding: 1rem;
+}
