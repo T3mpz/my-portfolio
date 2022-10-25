@@ -8,7 +8,12 @@
   --gray: rgba(128, 128, 128, 0.2);
   --black: rgba(28, 28, 28, 0.2);
 }
-
+/* Typography */
+p,
+input,
+textarea {
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
 /* Header || Navigation */
 .header-section {
   width: 100%;
@@ -81,14 +86,41 @@
   font-weight: bold;
   text-align: center;
 }
+/* My work cards */
 .my-work-section .project-card {
+  position: relative;
   min-height: 300px;
   max-width: 500px;
   background-color: rgba(255, 0, 0, 0.363);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 2rem auto 2rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.project-card:hover .project-card:not(scale-down){
+  transform: scale(.8);
+}
+
+.project-card .card-header {
+  font-size: 300%;
+  text-align: center;
+  transition: 0.2s;
+  transition-delay: 0.3s;
+}
+.project-card:hover .card-header {
+  transform: translate(-160px, -80px);
+}
+.project-card .card-description {
+  position: absolute;
+  transform: translateY(300px);
+  transition: 0.3s ease-in;
+  transition-delay: 0.3s;
+  color: var(--gray);
+}
+.project-card:hover .card-description {
+  transform: translateY(50px);
 }
 
 /* Contact section */
@@ -185,8 +217,12 @@ textarea {
     width: 100%;
   }
   .my-work-section .project-card {
-    min-width: 300px;
-    margin: .5rem;
+    min-width: 325px;
+    min-height: 350px;
+    margin: 0.5rem;
+  }
+  .project-card:hover .card-header {
+    transform: translateY(-120px);
   }
 
   /* Contact section */
