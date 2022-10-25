@@ -56,11 +56,18 @@
   font-size: 300%;
   font-weight: bold;
   letter-spacing: 0.25rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+.about-section .text-container span{
+  display: block;
 }
 .about-section .text-container p {
   line-height: 1.5rem;
+  letter-spacing: .1rem;
   color: var(--dark-gray);
+}
+.about-section .text-container p::first-letter{
+  font-size: 300%;
 }
 
 /* My work section */
@@ -76,25 +83,14 @@
 }
 .my-work-section .project-card {
   min-height: 300px;
+  max-width: 500px;
   background-color: rgba(255, 0, 0, 0.363);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-block: 1rem;
+  margin: 2rem auto 2rem;
 }
 
-/* More work section */
-.more-work-section {
-  display: flex;
-  justify-content: space-around;
-  margin-block: 2rem;
-}
-.more-work-section .social-icon-container {
-  background-color: orange;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-}
 /* Contact section */
 .contact-section {
   min-height: 400px;
@@ -140,4 +136,62 @@ textarea {
   width: 100%;
   background-color: var(--blue);
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-section .logo-container{
+  color: #fff;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.footer-section .social-icon-list{
+  display: flex;
+}
+.footer-section .fa-brands{
+  color: #fff;
+  margin-inline: .5rem;
+}
+.footer-section .fa-brands:hover{
+  cursor: pointer;
+  color: var(--light-blue);
+}
+ /* Tablet and above */
+@media screen and (min-width: 740px){
+  /* Main */
+  .main-section{
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  /* About section */
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .about-section .text-container{
+    max-width: 50%; 
+  }
+
+  /* My work section */
+  .my-work-section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .my-work-section h3{
+    width: 100%;
+  }
+  .my-work-section .project-card{
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  /* Contact section */
+  .contact-section .form-container{
+    width: 60%;
+  }
+
 }
