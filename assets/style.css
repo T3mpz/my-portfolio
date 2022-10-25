@@ -58,15 +58,15 @@
   letter-spacing: 0.25rem;
   margin-bottom: 2rem;
 }
-.about-section .text-container span{
+.about-section .text-container span {
   display: block;
 }
 .about-section .text-container p {
   line-height: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: var(--dark-gray);
 }
-.about-section .text-container p::first-letter{
+.about-section .text-container p::first-letter {
   font-size: 300%;
 }
 
@@ -140,26 +140,26 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
-.footer-section .logo-container{
+.footer-section .logo-container {
   color: #fff;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
-.footer-section .social-icon-list{
+.footer-section .social-icon-list {
   display: flex;
 }
-.footer-section .fa-brands{
+.footer-section .fa-brands {
   color: #fff;
-  margin-inline: .5rem;
+  margin-inline: 0.5rem;
 }
-.footer-section .fa-brands:hover{
+.footer-section .fa-brands:hover {
   cursor: pointer;
   color: var(--light-blue);
 }
- /* Tablet and above */
-@media screen and (min-width: 740px){
+/* Tablet and above */
+@media screen and (min-width: 740px) {
   /* Main */
-  .main-section{
+  .main-section {
     max-width: 1110px;
     margin: 0 auto;
   }
@@ -170,28 +170,53 @@ textarea {
     flex-direction: row;
     align-items: center;
   }
-  .about-section .text-container{
-    max-width: 50%; 
+  .about-section .text-container {
+    max-width: 50%;
   }
 
   /* My work section */
-  .my-work-section{
+  .my-work-section {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .my-work-section h3{
+  .my-work-section h3 {
     width: 100%;
   }
-  .my-work-section .project-card{
+  .my-work-section .project-card {
     min-width: 300px;
-    max-width: 500px;
+    margin: .5rem;
   }
 
   /* Contact section */
-  .contact-section .form-container{
+  .contact-section .form-container {
     width: 60%;
   }
-
 }
+
+/* Side navigation idea */
+/* @media screen and (min-width: 1024px) {
+  .main-section {
+    position: relative;
+  }
+  .navigation-section {
+    display: none;
+  }
+  .side-navigation {
+    height: 100%;
+    position: absolute;
+  }
+  .side-navigation .side-navigation-list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  .side-navigation .side-nav-item:first-letter {
+    font-size: 300%;
+  }
+  .side-navigation .side-navigation-list .side-nav-item:nth-child(1) {
+    top: 225px;
+    position: absolute;
+  }
+} */
