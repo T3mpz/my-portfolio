@@ -104,15 +104,14 @@ textarea {
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.25);
   z-index: 100;
 }
-.project-card:hover{
+.project-card:hover {
   border: none;
 }
-
 
 .project-card:hover::after {
   content: "";
   background-color: rgba(72, 72, 72, 0.8);
-  box-shadow: inset  0 0 15px 2px var(--light-blue);
+  box-shadow: inset 0 0 15px 2px var(--light-blue);
   position: absolute;
   top: 0;
   left: 0;
@@ -120,24 +119,23 @@ textarea {
   height: 100%;
   z-index: -1;
 }
-
 .project-card[data-project-name="news-home-page"] {
   background-image: url(./images/news-menu-bg.png);
   background-position: center;
   background-size: cover;
-  
 }
-.project-card .card-header a{
+.project-card .card-header a {
   color: var(--white);
   transition: all 1s ease;
   display: block;
 }
-.project-card .card-header a:hover{
+.project-card .card-header a:hover {
   transform: scale(1.1);
 }
-.project-card .card-header  {
+.project-card .card-header {
   position: absolute;
   left: 0;
+  top: 0;
   padding: 1rem;
   font-family: "Crete Round", Arial, Helvetica, sans-serif;
   font-size: 225%;
@@ -260,9 +258,9 @@ textarea {
     margin: 0.5rem;
     padding: 2rem 0.5rem;
   }
-  .project-card:hover .card-header {
+  /* .project-card:hover .card-header {
     transform: translateY(-120px);
-  }
+  }  */
 
   /* Contact section */
   .contact-section .form-container {
