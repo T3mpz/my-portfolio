@@ -122,7 +122,7 @@ textarea {
 }
 
 .project-card[data-project-name="news-home-page"] {
-  background-image: url(../images/news-menu-bg.png);
+  background-image: url(./images/news-menu-bg.png);
   background-position: center;
   background-size: cover;
   
