@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Average&family=Crete+Round&family=Mulish:wght@400;700&display=swap");
 :root {
   --dark-blue: rgb(17, 64, 132);
-  --blue: rgb(52, 102, 170);
-  --light-blue: rgb(130, 183, 220);
+  --blue: rgba(52, 102, 170, 1);
+  --light-blue: rgba(130, 183, 220, 1);
   --white: rgb(241, 241, 241);
   --dark-gray: rgb(128, 128, 128);
   --gray: rgba(128, 128, 128, 0.2);
@@ -91,36 +91,74 @@ textarea {
   position: relative;
   min-height: 300px;
   max-width: 500px;
-  background-color: rgba(255, 0, 0, 0.363);
+  background-color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  border-radius: 6px;
   margin: 2rem auto 2rem;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
+  -webkit-box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.25);
+  z-index: 100;
 }
-.project-card:hover .project-card:not(scale-down){
-  transform: scale(.8);
+.project-card:hover{
+  border: none;
 }
 
-.project-card .card-header {
-  font-size: 300%;
-  text-align: center;
-  transition: 0.2s;
+
+.project-card:hover::after {
+  content: "";
+  background-color: rgba(72, 72, 72, 0.8);
+  box-shadow: inset  0 0 15px 2px var(--light-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.project-card[data-project-name="news-home-page"] {
+  background-image: url(/assets/images/news-menu-bg.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+.project-card .card-header a{
+  color: var(--white);
+  transition: all 1s ease;
+  display: block;
+}
+.project-card .card-header a:hover{
+  transform: scale(1.1);
+}
+.project-card .card-header  {
+  position: absolute;
+  left: 0;
+  padding: 1rem;
+  font-family: "Crete Round", Arial, Helvetica, sans-serif;
+  font-size: 225%;
+  transform: translateX(-500px);
+  transition: 0.3s ease-in-out;
   transition-delay: 0.3s;
 }
 .project-card:hover .card-header {
-  transform: translate(-160px, -80px);
+  transform: translate(0);
 }
 .project-card .card-description {
   position: absolute;
+  left: 0;
+  padding: 1rem;
   transform: translateY(300px);
-  transition: 0.3s ease-in;
-  transition-delay: 0.3s;
-  color: var(--gray);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.4s;
+  color: var(--white);
 }
 .project-card:hover .card-description {
-  transform: translateY(50px);
+  transform: translateY(30px);
 }
 
 /* Contact section */
@@ -218,8 +256,9 @@ textarea {
   }
   .my-work-section .project-card {
     min-width: 325px;
-    min-height: 350px;
+    min-height: 330px;
     margin: 0.5rem;
+    padding: 2rem 0.5rem;
   }
   .project-card:hover .card-header {
     transform: translateY(-120px);
