@@ -90,7 +90,7 @@ textarea {
 .my-work-section .project-card {
   position: relative;
   min-height: 300px;
-  max-width: 500px;
+  max-width: 400px;
   background-color: var(--light-blue);
   border: 1px solid var(--light-blue);
   border-radius: 6px;
@@ -237,7 +237,7 @@ textarea {
 @media screen and (min-width: 740px) {
   /* Main */
   .main-section {
-    max-width: 1110px;
+    max-width: 1500px;
     margin: 0 auto;
   }
 
@@ -262,14 +262,12 @@ textarea {
     width: 100%;
   }
   .my-work-section .project-card {
-    min-width: 325px;
+    /* min-width: 325px; */
+    min-width: 400px;
     min-height: 330px;
     margin: 0.5rem;
     padding: 2rem 0.5rem;
   }
-  /* .project-card:hover .card-header {
-    transform: translateY(-120px);
-  }  */
 
   /* Contact section */
   .contact-section .form-container {
@@ -277,28 +275,3 @@ textarea {
   }
 }
 
-/* Side navigation idea */
-/* @media screen and (min-width: 1024px) {
-  .main-section {
-    position: relative;
-  }
-  .navigation-section {
-    display: none;
-  }
-  .side-navigation {
-    height: 100%;
-    position: absolute;
-  }
-  .side-navigation .side-navigation-list {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-  }
-  .side-navigation .side-nav-item:first-letter {
-    font-size: 300%;
-  }
-  .side-navigation .side-navigation-list .side-nav-item:nth-child(1) {
-    top: 225px;
-    position: absolute;
-  }
-} */

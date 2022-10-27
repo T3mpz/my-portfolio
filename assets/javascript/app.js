@@ -14,18 +14,24 @@ const cardEl = document.querySelectorAll(".project-card");
 // Using for loop to iterate over each card
 //   intializing      condition    incrementer
 for (let i = 0; i < cardEl.length; i++) {
-  // Whatever cardEl index you hover on, I want to add an event listener to lisen for a hover mouse enter.
-  // card index    eventListener on mouse hover    function(run this code)
+  // Whatever cardEl index I hover on, I want to add an event listener to lisen for a hover mouse enter.
+  // card index    eventListener on mouse hover    function(run this code) <-- for loop logic
   cardEl[i].addEventListener("mouseenter", function () {
     // I want to add a class to the cardEl being hovered
     // Have to include index to be able to track each cards index
     cardEl[i].classList.add("scale-up");
+    // console.log(cardEl[i]);
+    console.log(cardEl[i]);
   });
+
   // What ever cardEl index you hover on, I want to add an event listener to lisen for a hover mouse leave.
   // card index    eventListener on mouse hover    function(run this code)
   cardEl[i].addEventListener("mouseleave", function () {
     // I want to remove a class to the cardEl being hovered
     // Have to include index to be able to track each cards index
     cardEl[i].classList.remove("scale-up");
+    // console.log(cardEl[i]);
   });
 }
+
+for (let i = 0; i < cardEl.length; i++) {}
