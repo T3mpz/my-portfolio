@@ -110,6 +110,10 @@ textarea {
 .scale-down {
   transform: scale(0.8);
 }
+.project-card {
+  background-position: center;
+  background-size: cover;
+}
 .project-card:hover {
   border: none;
   z-index: 1000;
@@ -128,8 +132,9 @@ textarea {
 }
 .project-card[data-project-name="news-home-page"] {
   background-image: url(./images/news-menu-bg.png);
-  background-position: center;
-  background-size: cover;
+}
+.project-card[data-project-name="studyBuddies"] {
+  background-image: url(./images/StudyBuddyApp.png);
 }
 .project-card .card-header a {
   color: var(--white);
@@ -274,4 +279,3 @@ textarea {
     width: 60%;
   }
 }
-
